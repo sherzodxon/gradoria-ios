@@ -1,0 +1,11 @@
+[00:00:18.696] Server  WARN    ⚠ "Found lockfile missing swc dependencies," "patching..."
+[00:00:21.583] Server  LOG     
+[00:00:21.598] Server  LOG       We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:21.603] Server  LOG       The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:21.604] Server  LOG       	- include was updated to add '.next/dev/types/**/*.ts'
+[00:00:21.605] Server  LOG     
+[00:00:21.606] Server  LOG       The following mandatory changes were made to your tsconfig.json:
+
+[00:00:21.607] Server  LOG       	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+[00:00:21.612] Server  LOG     
