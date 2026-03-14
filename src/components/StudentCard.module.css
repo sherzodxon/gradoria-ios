@@ -1,0 +1,86 @@
+.card {
+  width: 100%;
+  background: var(--card-bg2);
+  border-radius: 20px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s, transform 0.1s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card:hover {
+  background: rgba(25, 20, 40, 0.85);
+}
+
+.card:active {
+  transform: scale(0.99);
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 14px;
+  flex-shrink: 0;
+  border: 1.5px solid;
+}
+
+.avatarGold {
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+.avatarRed {
+  border-color: rgba(255, 82, 82, 0.4);
+}
+
+.info {
+  flex: 1;
+}
+
+.name {
+  color: var(--white);
+  font-size: 16px;
+  font-family: var(--font);
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  margin-right: 10px;
+  border: 1px solid;
+  flex-shrink: 0;
+}
+
+.badgeGold {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.badgeRed {
+  border-color: rgba(255, 82, 82, 0.3);
+}
+
+.badgeText {
+  font-size: 14px;
+  font-family: var(--font);
+  font-weight: 400;
+}
+
+.textGold {
+  color: var(--gold);
+}
+
+.textRed {
+  color: var(--red);
+}

@@ -1,0 +1,222 @@
+.container {
+  min-height: 100dvh;
+  background-color: var(--bg);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.glowOrb {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orbTopLeft {
+  top: -80px;
+  left: -80px;
+  background: #311B92;
+  opacity: 0.15;
+}
+
+.orbBottomRight {
+  bottom: -100px;
+  right: -80px;
+  background: #1A237E;
+  opacity: 0.15;
+}
+
+.scrollContent {
+  flex: 1;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.inner {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  padding-top: max(50px, env(safe-area-inset-top));
+  padding-bottom: 50px;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.logoWrap {
+  margin-bottom: 4px;
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.35));
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+  display: block;
+}
+
+.appName {
+  font-family: var(--font);
+  color: var(--gold);
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 400;
+}
+
+.formCard {
+  width: 100%;
+  background: var(--card-bg);
+  border-radius: 28px;
+  padding: 24px;
+  border: 1px solid var(--gold-faint);
+  backdrop-filter: blur(10px);
+}
+
+.inputGroup {
+  margin-bottom: 18px;
+}
+
+.inputLabel {
+  display: block;
+  font-family: var(--font);
+  color: var(--gold);
+  font-size: 11px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  background: var(--input-bg);
+  border-radius: 14px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  transition: border-color 0.2s;
+}
+
+.inputWrapper:focus-within {
+  border-color: rgba(212, 175, 55, 0.5);
+}
+
+.inputIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--gold-dim);
+  margin-left: 14px;
+  flex-shrink: 0;
+}
+
+.input {
+  flex: 1;
+  padding: 14px 12px;
+  color: var(--white);
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.eyeBtn {
+  padding: 12px 14px;
+  color: var(--gold-dim);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.eyeBtn:hover {
+  color: var(--gold);
+}
+
+.error {
+  color: var(--red);
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 12px;
+  background: rgba(255, 82, 82, 0.08);
+  border: 1px solid rgba(255, 82, 82, 0.2);
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.loginBtn {
+  width: 100%;
+  background: var(--gold);
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s, transform 0.1s;
+  user-select: none;
+}
+
+.loginBtn:hover:not(.loginBtnDisabled) {
+  opacity: 0.9;
+}
+
+.loginBtn:active:not(.loginBtnDisabled) {
+  transform: scale(0.98);
+}
+
+.loginBtnDisabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnContent {
+  display: flex;
+  align-items: center;
+  font-family: var(--font);
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  border-top-color: #000;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.footer {
+  color: var(--gold-text);
+  font-size: 10px;
+  margin-top: 35px;
+  font-family: var(--font);
+  font-weight: 400;
+}
