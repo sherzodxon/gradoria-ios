@@ -2,7 +2,7 @@ import axios from 'axios';
 import { getToken } from './auth';
 import { AuthResponse, GivePointPayload, LoginPayload, User } from '@/types';
 
-const BASE_URL = 'https://test.edexschool.uz/api';
+const BASE_URL = 'https://api.edexschool.uz/api';
 
 const api = axios.create({
   baseURL: BASE_URL,
