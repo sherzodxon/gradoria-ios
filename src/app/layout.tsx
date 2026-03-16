@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="uz">
       <head>
-        <link rel="apple-touch-icon" href="/icon-192.png" />
+        <link rel="apple-touch-icon" href="/icon_512.png" />
         <meta name="mobile-web-app-capable" content="yes" />
         <link
           href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap"

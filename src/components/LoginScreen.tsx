@@ -50,7 +50,7 @@ export default function LoginScreen({ onLogin }: Props) {
         <div className={styles.inner}>
           {/* Logo */}
           <div className={styles.logoWrap}>
-            <img src="/icon-512.png" alt="Gradoria" className={styles.logo} />
+            <img src="/icon_1024.png" alt="Gradoria" className={styles.logo} />
           </div>
 
           <h1 className={styles.appName}>GRADORIA</h1>

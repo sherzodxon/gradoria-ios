@@ -74,7 +74,7 @@ export default function RulesModal({ student, visible, onClose, onPointGiven }: 
         description: confirm.item.description,
       });
       const sign = confirm.item.points >= 0 ? '+' : '';
-      setSuccessMsg(`${student.name}ga ${sign}${confirm.item.points} XP berildi! ✨`);
+      setSuccessMsg(`${student.name}ga ${sign}${confirm.item.points} ball berildi! ✨`);
       setConfirm({ show: false, item: null, band: 0, isPos: true });
       setTimeout(() => {
         setSuccessMsg('');
@@ -155,7 +155,7 @@ export default function RulesModal({ student, visible, onClose, onPointGiven }: 
             <p className={styles.confirmStudent}>{student?.name} {student?.surname}</p>
             <p className={styles.confirmDesc}>{confirm.item?.description}</p>
             <p className={`${styles.confirmPts} ${confirm.isPos ? styles.textGreen : styles.textRed}`}>
-              {confirm.item?.points >= 0 ? '+' : ''}{confirm.item?.points} XP berilsinmi?
+              {confirm.item?.points >= 0 ? '+' : ''}{confirm.item?.points} ball berilsinmi?
             </p>
             <div className={styles.confirmBtns}>
               <button
